@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type='text/css'>
+  #closed{
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    opacity: 1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  #opened {
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+</style>
+</head>
+
+<body>
+  <script>
+  var isOpen = false;
+
+  function reactfridge() {
+    var closed = document.getElementById("closed");
+    var opened = document.getElementById("opened");
+
+    if (isOpen) {
+      closed.style.opacity = '1';
+      opened.style.opacity = '0';
+      isOpen = false;
+    } else {
+      closed.style.opacity = '0';
+      opened.style.opacity = '1';
+      isOpen = true;
+    }
+  }
+</script>
+</body>
+<div onclick='reactfridge()'>
+  <img src='images/closed.png' id='closed'>
+  <img src='images/opened.png' id='opened'>
+</div>
+
+
+</html>
