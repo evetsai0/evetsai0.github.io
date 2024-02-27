@@ -26,7 +26,7 @@
     transition: all 1s ease;
   }
 
-  #magnifying-glass{
+  #mag{
     font-size: 10em;
     display: inline-block;
     width: 0.4em;
@@ -36,7 +36,7 @@
     position: relative;
     border-radius: 0.35em;
   }
-  #magnifying-glassb:before{
+  #mag:before{
     content: "";
     display: inline-block;
     position: absolute;
@@ -47,6 +47,13 @@
     width: 0.35em;
     height: 0.08em;
     transform: rotate(45deg);
+  }
+  .magnify{
+    transform: scale(0.3);
+    transform-origin: bottom left;
+    position: absolute;
+    top:50%;
+    left: 60%;
   }
 
 </style>
@@ -73,11 +80,11 @@
 </script>
 </body>
 <div onclick='reactfridge()'>
-  <img src='images/closed.png' id='closed'>
-  <img src='images/opened.png' id='opened'>
+<!--   <img src='images/closed.png' id='closed'>
+  <img src='images/opened.png' id='opened'> -->
 </div>
-<div id="magnifying-glass" ></div>
-<div id="magnifying-glassb"></div>
+<div class='magnify' ><div id="mag"></div></div>
+<!-- <div id="magnifying-glassb"></div> -->
 
 
 </html>
