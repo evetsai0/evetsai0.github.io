@@ -10,10 +10,10 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     depth: 100,
     modifier: 2.5,
   },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

@@ -222,7 +222,7 @@ body {
   content: '';
 }
 
-.tranding-slider-control .swiper-pagination {
+/*.tranding-slider-control .swiper-pagination {
   position: relative;
   width: 15rem;
   bottom: 1rem;
@@ -234,4 +234,4 @@ body {
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
-}
+}*/
