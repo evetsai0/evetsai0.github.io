@@ -40,7 +40,7 @@ html {
   }
 }
 
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 1.3rem;
 }
 
@@ -56,7 +56,7 @@ html {
 
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
-}*/
+}
 
 body {
   font-size: 1.6rem;
