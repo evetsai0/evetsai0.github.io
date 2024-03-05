@@ -7,6 +7,7 @@
     top: 0px;
     left: 20%;
     opacity: 1;
+    height: 600px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -19,6 +20,7 @@
     top: 0px;
     left: 20%;
     opacity: 0;
+    height: 600px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -35,6 +37,7 @@
     border: 0.1em solid red;
     position: relative;
     border-radius: 0.35em;
+    transition: transform .7s ease-in-out;
   }
   #mag:before{
     content: "";
@@ -47,13 +50,29 @@
     width: 0.35em;
     height: 0.08em;
     transform: rotate(45deg);
+    transition: transform .7s ease-in-out;
   }
   .magnify{
     transform: scale(0.3);
     transform-origin: bottom left;
     position: absolute;
+    bottom:40%;
+    left: 5%;
+    transition: transform .7s ease-in-out;
+  }
+  .magnify:hover {
+    transform: scale(1) rotate(5deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+  #box{
+    width:30%;
+    height:10%;
+    position:absolute;
     top:50%;
-    left: 60%;
+    left: 50%;
+    background-color: white;
+    border:solid black 5px;
+    border-radius: 60px; padding: 20px;"
   }
 
 </style>
@@ -80,11 +99,10 @@
 </script>
 </body>
 <div onclick='reactfridge()'>
-  <img src='closed.png' id='closed'>
-  <img src='opened.png' id='opened'>
+  <img src='images/closed.png' id='closed'>
+  <img src='images/opened.png' id='opened'>
 </div>
-<div class='magnify' ><div id="mag"></div></div>
-<!-- <div id="magnifying-glassb"></div> -->
+<div id='box'><div class='magnify' ><div id="mag"></div></div></div>
 
 
 </html>
