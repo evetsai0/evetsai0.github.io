@@ -164,14 +164,14 @@ body {
 
 .tranding-slider-control {
   position: relative;
-  bottom: 2rem;
+  bottom: 27rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .tranding-slider-control .swiper-button-next {
-  left: 58% !important;
+  left: 98% !important;
   transform: translateX(-58%) !important;
 }
 
