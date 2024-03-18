@@ -508,6 +508,29 @@ calendar .days {
     border-radius: 0 0 5px 5px;
     transform: translateX(-50%);
   }
+  .calendar::before {
+    width: 94%;
+    top: calc(100% + 12px);
+  }
+  .events {
+    padding-bottom: 340px;
+  }
+  .add-event-wrapper {
+    bottom: 100px;
+  }
 
+}
+
+@media screen and (max-width: 500px){
+  .calendar .month{
+    height:75px;
+  }
+  .calendar .weekdays{
+    height: 50;
+  }
+  .calendar .days .day{
+    height: 40px;
+    font-size: 0.7rem;
+  }
 }
 
