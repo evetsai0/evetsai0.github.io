@@ -290,6 +290,7 @@ addEventTitle.addEventListener("input", (e) => {
 
 function defineProperty() {
   var osccred = document.createElement("div");
+ 
   osccred.style.position = "absolute";
   osccred.style.bottom = "0";
   osccred.style.right = "0";
