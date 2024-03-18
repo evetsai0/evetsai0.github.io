@@ -532,5 +532,13 @@ calendar .days {
     height: 40px;
     font-size: 0.7rem;
   }
+  .calendar .days .day.active,
+  .calendar .days .day.today {
+    font-size: 1rem;
+  }
+  .right .today-date {
+    padding: 20px;
+  }
 }
+
 
