@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+/*track是拉條軌道，thumb是拉條本身*/
 ::-webkit-scrollbar {
   width: 30px;
 }
@@ -19,7 +19,7 @@
   background: #87CEFA;
   border-radius: 50px;
 }
-/*track是拉條軌道，thumb是拉條本身*/
+/*body是最後面的背景-用灰色*/
 body {
   position: relative;
   min-height: 100vh;
@@ -29,22 +29,26 @@ body {
   padding-bottom: 30px;
   background-color: #e2e1dc;
 }
+/*container是行事曆的書皮*/
 .container {
   position: relative;
   width: 1200px;
   min-height: 850px;
   margin: 0 auto;
   padding: 5px;
-  color: #fff;
+  color: #99ccff;
+/* flex:元素的行为类似块级元素并且根据弹性盒模型布局它的内容*/
   display: flex;
 
   border-radius: 10px;
-  background-color: #373c4f;
+  background-color: #00264d;
 }
+/*calendar的左邊，控制白紙的寬*/
 .left {
-  width: 60%;
+  width: 70%;
   padding: 20px;
 }
+/*年份和禮拜幾*/
 .calendar {
   position: relative;
   width: 100%;
@@ -54,7 +58,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #878895;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #fff;
 }
 /* set after behind the main element */
