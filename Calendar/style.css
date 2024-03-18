@@ -7,19 +7,19 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/* nice scroll bar */
+
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 30px;
 }
 ::-webkit-scrollbar-track {
-  background: #f5f5f5;
+  background:  #ffffff;
   border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-clr);
+  background: #87CEFA;
   border-radius: 50px;
 }
-
+/*track是拉條軌道，thumb是拉條本身*/
 body {
   position: relative;
   min-height: 100vh;
