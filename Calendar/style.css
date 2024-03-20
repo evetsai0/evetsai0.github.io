@@ -92,14 +92,17 @@ body {
   font-weight: 500;
   text-transform: capitalize;
 }
+/*改年份上面的兩個箭頭*/
 .calendar .month .prev,
 .calendar .month .next {
   cursor: pointer;
 }
 .calendar .month .prev:hover,
 .calendar .month .next:hover {
-  color: var(--primary-clr);
+/*水藍色*/
+  color: #87CEFA;
 }
+/*行事曆的禮拜幾weekday(not include Sun.)*/
 .calendar .weekdays {
   width: 100%;
   height: 100px;
@@ -111,6 +114,7 @@ body {
   font-weight: 500;
   text-transform: capitalize;
 }
+/*flex direction*/
 .weekdays div {
   width: 14.28%;
   height: 100%;
@@ -118,6 +122,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+/*基本的flex就可以排了*/
 .calendar .days {
   width: 100%;
   display: flex;
@@ -128,16 +133,19 @@ body {
   font-weight: 500;
   margin-bottom: 20px;
 }
+/*每個日期要排好*/
 .calendar .days .day {
-  width: 14.28%;
+  width: 14.25%;
   height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--primary-clr);
+/*日期顏色*/
+  color: #6D6BCB;
   border: 1px solid #f5f5f5;
 }
+/*讓排版不會亂掉，迴圈可以選擇特定的日期*/
 .calendar .days .day:nth-child(7n + 1) {
   border-left: 2px solid #f5f5f5;
 }
@@ -155,16 +163,19 @@ body {
   color: #fff;
   background-color: var(--primary-clr);
 }
+/*不是這個月的日期要變灰色*/
 .calendar .days .prev-date,
 .calendar .days .next-date {
   color: #b3b3b3;
 }
+/*點日期之後日期要變大*/
 .calendar .days .active {
   position: relative;
   font-size: 2rem;
   color: #fff;
   background-color: var(--primary-clr);
 }
+/*radius加陰影*/
 .calendar .days .active::before {
   content: "";
   position: absolute;
@@ -174,12 +185,14 @@ body {
   height: 100%;
   box-shadow: 0 0 10px 2px var(--primary-clr);
 }
+/*underline and fontsize the date TODAY今天的*/
 .calendar .days .today {
   font-size: 2rem;
 }
 .calendar .days .event {
   position: relative;
 }
+/*數字下面要排版*/
 .calendar .days .event::after {
   content: "";
   position: absolute;
