@@ -1,3 +1,4 @@
+//選取class
 const calendar = document.querySelector(".calendar"),
   date = document.querySelector(".date"),
   daysContainer = document.querySelector(".days"),
@@ -37,23 +38,6 @@ const months = [
   "December",
 ];
 
-// const eventsArr = [
-//   {
-//     day: 13,
-//     month: 11,
-//     year: 2022,
-//     events: [
-//       {
-//         title: "Event 1 lorem ipsun dolar sit genfa tersd dsad ",
-//         time: "10:00 AM",
-//       },
-//       {
-//         title: "Event 2",
-//         time: "11:00 AM",
-//       },
-//     ],
-//   },
-// ];
 
 const eventsArr = [];
 getEvents();
@@ -118,7 +102,7 @@ function initCalendar() {
   addListner();
 }
 
-//function to add month and year on prev and next button
+//計算 add month and year on prev and next button
 function prevMonth() {
   month--;
   if (month < 0) {
@@ -449,7 +433,7 @@ eventsContainer.addEventListener("click", (e) => {
   }
 });
 
-//function to save events in local storage
+//把event存到本機，醬才不會遺失
 function saveEvents() {
   localStorage.setItem("events", JSON.stringify(eventsArr));
 }
