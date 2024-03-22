@@ -285,6 +285,7 @@ body {
   margin-bottom: 20px;
   text-transform: capitalize;
 }
+/*右邊的日期(灰色)和禮拜幾(藍色)*/
 .right .today-date .event-day {
   font-size: 2rem;
   font-weight: 500;
@@ -304,6 +305,7 @@ body {
   flex-direction: column;
   padding-left: 4px;
 }
+/*右下角加加*/
 .events .event {
   position: relative;
   width: 95%;
@@ -316,7 +318,7 @@ body {
   padding-left: 50px;
   color: #fff;
   background: linear-gradient(90deg, #3f4458, transparent);
-  cursor: pointer;
+  cursor:cell;
 }
 /* even event */
 .events .event:nth-child(even) {
@@ -370,6 +372,7 @@ body {
 .events .event:hover::after {
   display: flex;
 }
+/*加加的shape, posistion*/
 .add-event {
   position: absolute;
   bottom: 30px;
@@ -385,7 +388,7 @@ body {
   opacity: 0.5;
   border-radius: 50%;
   background-color: transparent;
-  cursor: pointer;
+  cursor:cell;
 }
 .add-event:hover {
   opacity: 1;
@@ -403,6 +406,7 @@ body {
   font-weight: 500;
   color: #878895;
 }
+/*按加加跳出來新增事件*/
 .add-event-wrapper {
   position: absolute;
   bottom: 100px;
@@ -499,7 +503,7 @@ body {
   color: var(--primary-clr);
 }
 
-/* media queries */
+/* media要控制螢幕的尺寸不然誒出事 */
 
 @media screen and (max-width: 1000px) {
   body {
