@@ -397,14 +397,14 @@ addEventSubmit.addEventListener("click", () => {
   addEventFrom.value = "";
   addEventTo.value = "";
   updateEvents(activeDay);
-  //select active day and add event class if not added
+  //選擇活動日並新增事件類別（如果未新增）
   const activeDayEl = document.querySelector(".day.active");
   if (!activeDayEl.classList.contains("event")) {
     activeDayEl.classList.add("event");
   }
 });
 
-//function to delete event when clicked on event
+//打勾勾 delete event when clicked on event
 eventsContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("event")) {
     if (confirm("このイベントを削除してもよろしいですか?")) { //確定要刪除事件？
@@ -420,10 +420,10 @@ eventsContainer.addEventListener("click", (e) => {
               event.events.splice(index, 1);
             }
           });
-          //if no events left in a day then remove that day from eventsArr
+          //if no events left in a day then remove from eventsArr移除
           if (event.events.length === 0) {
             eventsArr.splice(eventsArr.indexOf(event), 1);
-            //remove event class from day
+            //從當天刪除事件類別
             const activeDayEl = document.querySelector(".day.active");
             if (activeDayEl.classList.contains("event")) {
               activeDayEl.classList.remove("event");
