@@ -429,7 +429,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  color: #373c4f;
+  color: #000000;
   border-bottom: 1px solid #f5f5f5;
 }
 .add-event-header .close {
@@ -464,20 +464,20 @@ body {
   height: 100%;
   outline: none;
   border: none;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #87CEFA;
   padding: 0 10px;
   font-size: 1rem;
   font-weight: 400;
-  color: #373c4f;
+  color: #87CEFA;
 }
 .add-event-body .add-event-input input::placeholder {
-  color: #a5a5a5;
+  color: #87CEFA;
 }
 .add-event-body .add-event-input input:focus {
-  border-bottom: 1px solid var(--primary-clr);
+  border-bottom: 1px solid #000000;
 }
 .add-event-body .add-event-input input:focus::placeholder {
-  color: var(--primary-clr);
+  color: #87CEFA;
 }
 .add-event-footer {
   display: flex;
@@ -485,6 +485,7 @@ body {
   justify-content: center;
   padding: 20px;
 }
+/*追加*/
 .add-event-footer .add-event-btn {
   height: 40px;
   font-size: 1rem;
@@ -492,15 +493,15 @@ body {
   outline: none;
   border: none;
   color: #fff;
-  background-color: var(--primary-clr);
+  background-color: #87CEFA;
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid var(--primary-clr);
+  border: 1px solid #87CEFA;
 }
 .add-event-footer .add-event-btn:hover {
   background-color: transparent;
-  color: var(--primary-clr);
+  color: #87CEFA;
 }
 
 /* media要控制螢幕的尺寸不然誒出事 */
