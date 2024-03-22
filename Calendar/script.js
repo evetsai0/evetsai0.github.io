@@ -62,7 +62,8 @@ function initCalendar() {
   }
 
   for (let i = 1; i <= lastDate; i++) {
-    //check if event is present on that day
+    //檢查當天是否有活動
+    //forEach() 方法对数组的每个元素执行一次给定的function
     let event = false;
     eventsArr.forEach((eventObj) => {
       if (
@@ -81,6 +82,7 @@ function initCalendar() {
       activeDay = i;
       getActiveDay(i);
       updateEvents(i);
+      // string 內插${}
       if (event) {
         days += `<div class="day today active event">${i}</div>`;
       } else {
@@ -267,9 +269,9 @@ document.addEventListener("click", (e) => {
   }
 });
 
-//allow 50 chars in eventtitle
+//allow 50 chars in eventtitle其實更多也可以
 addEventTitle.addEventListener("input", (e) => {
-  addEventTitle.value = addEventTitle.value.slice(0, 60);
+  addEventTitle.value = addEventTitle.value.slice(0, 60); //limit
 });
 
 function defineProperty() {
