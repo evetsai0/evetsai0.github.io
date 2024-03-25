@@ -354,7 +354,7 @@ body {
 .events .event:hover .event-time {
   color: #fff;
 }
-/* add tick in event after */
+/* add tick in event after 後面的勾勾醬子客人才可以把她check*/
 .events .event::after {
   content: "✔";
   position: absolute;
@@ -546,6 +546,7 @@ body {
     bottom: 100px;
   }
 }
+/*screen width*/
 @media screen and (max-width: 500px) {
   .calendar .month {
     height: 75px;
