@@ -43,7 +43,7 @@ const eventsArr = [];
 getEvents();
 console.log(eventsArr);
 
-//function to add days in days with class day and prev-date next-date on previous month and next month days and active on today
+//可以在天數中添加上課日和上一日期下一個日期上個月和下個月的日期並在今天激活
 function initCalendar() {
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
@@ -441,7 +441,7 @@ function saveEvents() {
   localStorage.setItem("events", JSON.stringify(eventsArr));
 }
 
-//function to get events from local storage
+//json資料繼承
 function getEvents() {
   //check if events are already saved in local storage then return event else nothing
   if (localStorage.getItem("events") === null) {
@@ -451,7 +451,7 @@ function getEvents() {
 }
 
 function convertTime(time) {
-  //convert time to 24 hour format
+  //時間24小時制
   let timeArr = time.split(":");
   let timeHour = timeArr[0];
   let timeMin = timeArr[1];

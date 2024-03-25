@@ -305,7 +305,7 @@ body {
   flex-direction: column;
   padding-left: 4px;
 }
-/*右下角加加*/
+/*事件橫條.單一event*/
 .events .event {
   position: relative;
   width: 95%;
@@ -325,7 +325,7 @@ body {
   background: transparent;
 }
 .events .event:hover {
-  background: linear-gradient(90deg, var(--primary-clr), transparent);
+  background: linear-gradient(90deg, #87CEFA, transparent);
 }
 .events .event .title {
   display: flex;
@@ -337,8 +337,9 @@ body {
   font-weight: 400;
   margin-left: 20px;
 }
+/*點點*/
 .events .event i {
-  color: var(--primary-clr);
+  color: #87CEFA;
   font-size: 0.5rem;
 }
 .events .event:hover i {
@@ -430,7 +431,7 @@ body {
   justify-content: space-between;
   padding: 0 20px;
   color: #000000;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #87CEFA;
 }
 .add-event-header .close {
   font-size: 1.5rem;
